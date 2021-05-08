@@ -1,0 +1,26 @@
+<script language="JavaScript">
+function do_scan_file_01()
+{
+    var left = (screen.width - 640)/2;
+    var top =  (screen.height - 400)/2;
+    window.open( "",
+                 "drweb_scan_form_popup_window",
+		 "width=640"+",height=400,left="+left+",top="+top+",scrollbars=yes,resizable=yes" );
+    document.getElementById( "drweb_online_scan_form" ).submit();
+    return false;
+}
+</script>
+
+<form method="POST" id="drweb_online_scan_form"
+enctype="multipart/form-data" action="https://online.drweb.com/result/" target="drweb_scan_form_popup_window">
+<div style="width: 225px; height: 105px; background: url(fon_green.gif)">
+	<div style="padding: 50px 10px 0 10px;">
+		<div ><input name="file" id="file_selection_input" type="file" size="18"></div>
+		<div style="padding-top: 5px; text-align: right"><input type="image" onClick="return do_scan_file_01();" src="button.gif" width="121" height="21"></div>
+	</div>
+</div>
+</form>
+
+
+
+
