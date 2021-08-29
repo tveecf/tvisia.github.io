@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+body { margin: 0; background-color: #C3C3C3; }
+
+img { border: 0; }
+
+table { background: url('../images/oben-mitte.jpg') repeat-x;}
+
+p { margin: 10px 0 0 0; font: normal 36px Georgia, Tahoma, Helvetica; font-style: italic; color: #687DA4; }
+
+.td_li { height: 100px; }
+.td_re { height: 100px; text-align: right; }
+
+.links { border: 1px solid #687DA4; border-right: none; background: #333; padding: 6px; }
+.mitte { border-top: 1px solid #990000; border-right: 1px solid #fff; border-bottom: 1px solid #990000; border-left: 1px solid #fff; background: #687DA4; color: #333; padding: 6px; }
+.rechts { border: 1px solid #687DA4; border-left: none; background: #333; padding: 6px; }
+
+

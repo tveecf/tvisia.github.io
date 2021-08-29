@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+body { margin: 0px; background: url('../images/oben-links-2.jpg') #C3C3C3 no-repeat; }
+
+/* Position der Navigation */ 
+#navi { margin: 125px 0px 0px 20px; }
+
+/* Formatierung der Navigation */ 
+a:link, a:visited, a:active { display: block; width: 130px; font: 16px/26px Tahoma, Helvetica, Arial; text-decoration: none; background: #666; border: 1px solid #C3C3C3; border-left: 1px solid #666 !important; color: #fff; margin-bottom: 5px; text-align: center; }
+a:hover { text-decoration: none; background: #C3C3C3; border: 1px solid #666; border-left: 1px solid #C3C3C3 !important; color: #000; }
+
+
+
