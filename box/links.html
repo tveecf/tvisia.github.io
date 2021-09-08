@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>VISIA.ML</title>
+    <meta name="description" content="description">
+    <meta name="keywords" content="description">
+    <meta name="language" content="DE">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script language="JavaScript">
+  function resultURL() 
+  {
+    var left = (screen.width - 640)/2
+    var top =  (screen.height - 400)/2
+    window.open( "", "scan", "width=640"+
+                 ",height=400,left="+left+
+                 ",top="+top+",scrollbars=no,resizable=yes")
+    document.getElementById( "drwebscanformURL" ).target = "scan";
+    return true;
+  } 
+</script>
+<script language="JavaScript">
+
+function do_scan_file_01()
+
+{
+    var left = (screen.width - 640)/2;
+    var top =  (screen.height - 400)/2;
+    window.open( "",
+                 "drweb_scan_form_popup_window",
+		 "width=640"+",height=400,left="+left+",top="+top+",scrollbars=yes,resizable=yes" );
+    document.getElementById( "drweb_online_scan_form" ).submit();
+    return false;
+}
+</script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="clear">&nbsp;</div>
+        <div id="top">
+          <img src="http://visia.ml/visia.png" height="120">
+        
+          
+      </header>
+      <div class="clear">&nbsp;</div>
+    <aside>
+      <h2>Navigation</h2>
+      <nav>
+        <ul>
+          <li><a title="Home" href="main.html" target="main">&raquo; Home</a></li>
+          <li><a title="APK Archiv" href="http://visia.ml/webtoolapkandroidtv.html" target="main">&raquo;  APK Archiv</a></li>
+          <li><a title="KODI" href="http://visia.ml/webtoolkodiplugins.html" target="main">&raquo; KODI Plugins</a></li>
+          <li><a title="APK Archive.org" href="http://visia.ml/webtoolarchiveorg.html" target="main">&raquo; TV Starter Kit </a></li>
+          <li><a title="IP/Speedtest" href="http://visia.ml/webtoolspeedtest.html" target="main">&raquo; Speedtest</a></li>
+          <li><a title="Audio" href="http://visia.ml/webtoolaudio.html" target="main">&raquo; Audio Player</a></li>
+            <li><a title="Link Shortener" href="http://visia.ml/webtoollinks.html" target="main">&raquo; Link Shortener</a></li>
+            
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      
+
+<form id="drwebscanformURL" action="https://online.drweb.com/result/" onSubmit="return resultURL()" method="post">
+<div style="width: 70%; height: 5%; background: url(fon_green.gif)">
+	<div style="padding: 50px 10px 0 10px;">
+		<div ><input type="text" name="url" value="http://" class=find style="width:100%; border: #9ac461 2px solid;"></div>
+		<div style="padding-top: 5px; text-align: right"><input type="image" src="button.gif" width="121" height="21"></div>
+	</div>
+</div>
+</form>
+
+<strong>Dr.WebAV Datei Checker
+</strong>
+
+
+<form method="POST" id="drweb_online_scan_form"
+enctype="multipart/form-data" action="https://online.drweb.com/result/" target="drweb_scan_form_popup_window">
+<div style="width: 225px; height: 105px; background: url(fon_green.gif)">
+	<div style="padding: 50px 10px 0 10px;">
+		<div ><input name="file" id="file_selection_input" type="file" size="18"></div>
+		<div style="padding-top: 5px; text-align: right"><input type="image" onClick="return do_scan_file_01();" src="button.gif" width="121" height="21"></div>
+	</div>
+</div>
+</form>
+
+
+        <div id="navihor">
+          <div class="hornavi">
+            <a href="main.html"target="main">Home</a>
+            <a href="http://visia.ml/webtoolapkandroidtv.html" target="main" target="main">APK Archiv</a>
+            <a href="" target="main">Link 3</a>
+            <a href="#" target="main">Link 4</a>
+            <a href="http://duckduckgo.com" target="main">DuckDuckGo</a>
+            </div>
+        </div>
+
+
+      </article>
+    </main>
+    <div class="clear">&nbsp;</div>
+  </div>
+
+  <div class="copyright" align="center"><a style="color:#FFFFFF;font-weight:normal;background-color:transparent" href="https://visia.ml" target="_blank>">©2021 VISIA.CF</a></div>
+
+</body>
+</html>
