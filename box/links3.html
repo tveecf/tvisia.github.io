@@ -16,7 +16,7 @@
     var left = (screen.width - 640)/2
     var top =  (screen.height - 400)/2
     window.open( "", "scan", "width=640"+
-                 ",height=400,left="+left+
+                 ",height=400,left="+main+
                  ",top="+top+",scrollbars=no,resizable=yes")
     document.getElementById( "drwebscanformURL" ).target = "scan";
     return true;
@@ -65,38 +65,10 @@ function do_scan_file_01()
     </aside>
 
     <main>
-      <article>
-        <h1>H1-&Uuml;berschrift</h1>
-
-         <p>Test</p>
-
-         <h2>H2-&Uuml;berschrift</h2>
-
-         <p>CkArtikel</p>
-
-         <h3>H3-&Uuml;berschrift</h3>
-
-         <p> <a href="http://visia.ml"  target="_blank">http Verbindung</a> oder
-<p><a href="https://visia.ml"  target="_blank">https Verbindung</a> 
-         </p>
-
-         <h4>H4-&Uuml;berschrift</h4>
-
-         <p>Beschreibung</p>
-
-         <h5>H5-&Uuml;berschrift</h5>
-
-         <p>Text</p>
-
-         <h5>H5</h5>
-
-         <p>Beschreibung</p>
-         div class="clear">&nbsp;</div>
-
-        </div>
+      
 
 <form id="drwebscanformURL" action="https://online.drweb.com/result/" onSubmit="return resultURL()" method="post">
-<div style="width: 225px; height: 105px; background: url(fon_green.gif)">
+<div style="width: 70%; height: 5%; background: url(fon_green.gif)">
 	<div style="padding: 50px 10px 0 10px;">
 		<div ><input type="text" name="url" value="http://" class=find style="width:100%; border: #9ac461 2px solid;"></div>
 		<div style="padding-top: 5px; text-align: right"><input type="image" src="button.gif" width="121" height="21"></div>
