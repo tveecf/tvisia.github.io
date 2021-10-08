@@ -9,7 +9,7 @@ body {
 
 #wrapper {
   background-color: #FFFFFF;
-  color: #000000;
+  color: #FFFFFF;
   margin: 0 auto;
   width: 95%;
 }
@@ -272,7 +272,7 @@ img {
   color: #5F5F5F;
 }
 
-/******************Besonderheiten für Bildschirmgroesse max. 768px**********************/
+/******************Besonderheiten fï¿½r Bildschirmgroesse max. 768px**********************/
 
 @media (max-width: 768px) {
 
@@ -334,7 +334,7 @@ article {
 
 }
 
-/*****************Besonderheiten für Bildschirmgroesse max. 480px***********************/
+/*****************Besonderheiten fï¿½r Bildschirmgroesse max. 480px***********************/
 
 @media (max-width: 480px) {
 
@@ -362,7 +362,7 @@ article h1, article h2, article h3, article h4, article h5 {
 
 }
 
-/*****************Besonderheiten für Bildschirmgroesse max. 32px***********************/
+/*****************Besonderheiten fï¿½r Bildschirmgroesse max. 32px***********************/
 
 @media (max-width: 320px) {
 
