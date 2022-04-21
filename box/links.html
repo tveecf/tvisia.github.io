@@ -37,7 +37,6 @@ function do_scan_file_01()
 }
 </script>
   </head>
-
   <body><center>
     <div id="wrapper">
       <header>
@@ -71,9 +70,9 @@ function do_scan_file_01()
 <script language="JavaScript">
   function resultURL() 
   {
-    var left = (screen.width - 320)/2
-    var top =  (screen.height - 200)/2
-    window.open( "", "scan", "width=340"+
+    var left = (screen.width - 640)/2
+    var top =  (screen.height - 400)/2
+    window.open( "", "scan", "width=640"+
                  ",height=400,left="+left+
                  ",top="+top+",scrollbars=no,resizable=yes")
     document.getElementById( "drwebscanformURL" ).target = "scan";
@@ -81,7 +80,7 @@ function do_scan_file_01()
   } 
 </script>
 <form id="drwebscanformURL" action="https://online.drweb.com/result/" onSubmit="return resultURL()" method="post">
-<div style="width: 112px; height: 52px; background: url(fon_green.gif)">
+<div style="width: 225px; height: 105px; background: url(fon_green.gif)">
 	<div style="padding: 50px 10px 0 10px;">
 		<div ><input type="text" name="url" value="http://" class=find style="width:100%; border: #9ac461 2px solid;"></div>
 		<div style="padding-top: 5px; text-align: right"><input type="image" src="button.gif" width="121" height="21"></div>
