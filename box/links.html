@@ -92,11 +92,11 @@ function do_scan_file_01()
 <script language="JavaScript">
 function do_scan_file_01()
 {
-    var left = (screen.width - 320)/2;
-    var top =  (screen.height - 200)/2;
+    var left = (screen.width - 640)/2;
+    var top =  (screen.height - 400)/2;
     window.open( "",
                  "drweb_scan_form_popup_window",
-		 "width=320"+",height=200,left="+left+",top="+top+",scrollbars=yes,resizable=yes" );
+		 "width=640"+",height=400,left="+left+",top="+top+",scrollbars=yes,resizable=yes" );
     document.getElementById( "drweb_online_scan_form" ).submit();
     return false;
 }
@@ -128,7 +128,7 @@ enctype="multipart/form-data" action="https://online.drweb.com/result/" target="
         </div>
       <article>
         <a href="https://virustotal.com" target="_blank"><img src="https://visia.ml/virustotalicon.png"  width="25%"  alt="VirusTotal"></a>
- <a href="https://yandex.ru" target="_blank">Yandex.ru</a>
+ <a href="https://virustotal.com" color="royalblue" target="_blank">Yandex.ru</a>
       </article>
     </main>
   </div>
