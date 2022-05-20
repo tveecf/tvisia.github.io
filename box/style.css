@@ -88,7 +88,7 @@ div#navihor {
 /*Navigation*/
 
 aside {
-  float: left;
+  float: center;
   width: 190px;
   padding: 5px 0px 0px 10px;
   margin: 0;
