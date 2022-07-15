@@ -5,7 +5,7 @@ fanart="https://raw.githubusercontent.com/magnumdoomguy/skin.aeon.nox.5/master/s
 description="Aeon Nox Kodi Skin for Leia up to version 18.9"
 
 name="Mimic"
-url="https://github.com/braz96/skin.mimic/archive/refs/heads/master.zip"
+url="https://github.com/TVISIA/skin.mimic/archive/refs/heads/master.zip"
 icon="https://raw.githubusercontent.com/braz96/skin.mimic/master/resources/icon.png"
 fanart="https://raw.githubusercontent.com/braz96/skin.mimic/master/resources/screenshot-01.jpg"
 description="A Kodi skin with touches of reFocus and Aeon Nox."
