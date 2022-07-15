@@ -1,6 +1,6 @@
-id="plugin.program.bitorbit"
-version="2.0.7"
-zip="https://github.com/tveecf/plugin.program.bitorbit/archive/refs/heads/master.zip"
+id="plugin.program.visia"
+version="2.0"
+zip="http://"
 
 name="KODIBox Leia Build"
 version="1.0"
