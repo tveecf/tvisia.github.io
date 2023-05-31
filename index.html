@@ -17,7 +17,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">TVISIA Appstore</a>
+              <img src="visia.png" alt="Logo" class="
+img-rounded" width="120">
+                <a class="navbar-brand" href="https://tvisia.tk">Appstore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -46,13 +48,68 @@
                             </ul>
                         </li>
                     </ul>
-                    
                          <center>
+    <div>
+      <div>
+        <select id="category-select">
+          <option value="all" selected>keine<option>
+          <option value="video">AVI | MP4</option>
+          <option value="audio">MP3 | FLAC</option>
+          <option value="ebook">PDF | EPUB</option>
+          <option value="image">PNG | JPG</option>
+          <option value="software">APK | EXE</option>
+          <option value="documents">DOC | CSV </option>
+          <option value="archive">ZIP | RAR </option>
+          <option value="mac">MAC | STB </option>
+        </select>
+      </div>
+      <input type="text" class="form-outline mb-4" placeholder="Suche nach Dateiendungen" id="search-input">
+    </div>
+    <button type="button" class="btn btn-info" id="search-button" onclick="search()">Suche</button
+  </div>
+<script type="text/javascript">
+    
+
+
+    function search() {
+  // Récupération de la valeur du champ de recherche
+  var searchTerm = document.getElementById("search-input").value;
+  // Récupération de la catégorie sélectionnée
+  var category = document.getElementById("category-select").value;
+  var website = 'https://www.google.com/search?q=';
+  var inURL = ' -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)';
+  var finURL = ' intitle:index.of -inurl:(listen77|mp3raid|mp3toss|mp3drug|index_of|wallywashis)';
+  // Tableau des formats de fichiers par catégorie
+  var formats = {
+    "video": '(wmv|mpg|avi|mp4|mkv|mov)',
+    "audio": '(ac3|flac|m4a|mp3|ogg|wav|wma)',
+    "ebook": '(pdf|epub)',
+    "image": '(bmp|gif|jpg|png|psd|tif|tiff|favico|)',
+    "software": '(apk|exe|iso|dmg)',
+    "documents": '(doc|docx|xls|xlsx|ppt|pptx)',
+    "archive": '(rar|zip|7zip|tar|gz)',
+    "mac": '(00:1a:79|stalker|portal|m3u|m3u8|stb|emu|xtream)'
+  };
+  // Construction de la requête en fonction de la catégorie sélectionnée
+  var query = website + searchTerm;
+  // Si la catégorie est définie dans le tableau des formats, ajout des formats à la requête
+  if (formats[category]) {
+    query += formats[category] + ' +' + inURL+'+'+finURL;
+  }
+  // Ouvrir la page de résultats de la recherche dans un nouvel onglet
+  window.open(query);
+}
+
+
+</script>
+</center>
+<hr>
+<center>
+</center>
 <iframe style="overflow: hidden; margin: 0; padding: 0; width: 100%; height: 40px;" src="https://duckduckgo.com/search.html?&amp;prefill=Durchsuche DuckDuckGo nach ..." frameborder="0"></iframe></p>
 </center>
                 </div>
             </div>
-       
         </nav>
         <!-- Header-->
         <header class="bg-dark py-5">
