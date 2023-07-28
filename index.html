@@ -1158,18 +1158,19 @@ img-rounded" width="180">
             </div>
         </section>
         <!-- Footer-->
-       <p> <footer class="text-center bg-darktext-white p-2 fixed-bottom">
-           <div class="input-group mb-3" id="search-form">
+       <p> <footer class="text-center bg-dark text-white p-2 fixed-bottom">
+           <div class="input-group-sm mb-2" id="search-form">
       <div class="input-group-prepend">
-        <select class="custom-select custom-select-lg mb-3" id="category-select">
-          <option value="all" selected>Everything</option>
-          <option value="video">Video</option>
-          <option value="audio">Audio</option>
-          <option value="ebook">eBook</option>
-          <option value="image">Image</option>
-          <option value="software">Software</option>
-          <option value="documents">Word Excel ...</option>
-          <option value="archive">Archive</option>
+        <select class="custom-select custom-select-sm mb-2" id="category-select">
+          <option value="all" selected>keine<option>
+          <option value="video">AVI | MP4</option>
+          <option value="audio">MP3 | FLAC</option>
+          <option value="ebook">PDF | EPUB</option>
+          <option value="image">PNG | JPG</option>
+          <option value="software">APK | EXE</option>
+          <option value="documents">DOC | CSV </option>
+          <option value="archive">ZIP | RAR </option>
+          <option value="mac">MAC | STB </option>
         </select>
       </div>
       <input type="text" class="form-control" placeholder="search here" id="search-input">
@@ -1199,10 +1200,11 @@ img-rounded" width="180">
     "video": '(wmv|mpg|avi|mp4|mkv|mov)',
     "audio": '(ac3|flac|m4a|mp3|ogg|wav|wma)',
     "ebook": '(pdf|epub)',
-    "image": '(bmp|gif|jpg|png|psd|tif|tiff)',
-    "software": '(exe|iso|dmg)',
+    "image": '(bmp|gif|jpg|png|psd|tif|tiff|favico|)',
+    "software": '(apk|exe|iso|dmg)',
     "documents": '(doc|docx|xls|xlsx|ppt|pptx)',
-    "archive": '(rar|zip|7zip|tar|gz)'
+    "archive": '(rar|zip|7zip|tar|gz)',
+    "mac": '(00:1a:79|stalker|portal|m3u|m3u8|stb|emu|xtream)'
   };
   // Construction de la requête en fonction de la catégorie sélectionnée
   var query = website + searchTerm;
