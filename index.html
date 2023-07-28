@@ -1158,8 +1158,64 @@ img-rounded" width="180">
             </div>
         </section>
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">2023 © TVISIA.TK | ANDROIDIPTV.TK | Appstore for your Android TV / Fire TV devices </p></div>
+       <p> <footer class="text-center bg-darktext-white p-2 fixed-bottom">
+           <div class="input-group mb-3" id="search-form">
+      <div class="input-group-prepend">
+        <select class="custom-select custom-select-lg mb-3" id="category-select">
+          <option value="all" selected>Everything</option>
+          <option value="video">Video</option>
+          <option value="audio">Audio</option>
+          <option value="ebook">eBook</option>
+          <option value="image">Image</option>
+          <option value="software">Software</option>
+          <option value="documents">Word Excel ...</option>
+          <option value="archive">Archive</option>
+        </select>
+      </div>
+      <input type="text" class="form-control" placeholder="search here" id="search-input">
+    </div>
+    <button type="button" class="btn btn-info" id="search-button" onclick="search()">Search</button>
+
+  </div>
+  
+</footer>
+
+
+
+<script type="text/javascript">
+    
+
+
+    function search() {
+  // Récupération de la valeur du champ de recherche
+  var searchTerm = document.getElementById("search-input").value;
+  // Récupération de la catégorie sélectionnée
+  var category = document.getElementById("category-select").value;
+  var website = 'https://www.google.com/search?q=';
+  var inURL = ' -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)';
+  var finURL = ' intitle:index.of -inurl:(listen77|mp3raid|mp3toss|mp3drug|index_of|wallywashis)';
+  // Tableau des formats de fichiers par catégorie
+  var formats = {
+    "video": '(wmv|mpg|avi|mp4|mkv|mov)',
+    "audio": '(ac3|flac|m4a|mp3|ogg|wav|wma)',
+    "ebook": '(pdf|epub)',
+    "image": '(bmp|gif|jpg|png|psd|tif|tiff)',
+    "software": '(exe|iso|dmg)',
+    "documents": '(doc|docx|xls|xlsx|ppt|pptx)',
+    "archive": '(rar|zip|7zip|tar|gz)'
+  };
+  // Construction de la requête en fonction de la catégorie sélectionnée
+  var query = website + searchTerm;
+  // Si la catégorie est définie dans le tableau des formats, ajout des formats à la requête
+  if (formats[category]) {
+    query += formats[category] + ' +' + inURL+'+'+finURL;
+  }
+  // Ouvrir la page de résultats de la recherche dans un nouvel onglet
+  window.open(query);
+}
+
+
+</script>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
